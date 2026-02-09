@@ -11,11 +11,11 @@
 # 文档：https://redefine-docs.ohevan.com/basic/info
 info:
   # 站点标题
-  title: Theme Redefine
+  title: Bourne的个人博客
   # 站点副标题
-  subtitle: Redefine Your Hexo Journey.
+  subtitle:  ''
   # 作者名称
-  author: The Redefine Team
+  author: Bourne
   # 站点 URL
   url: https://redefine.ohevan.com
 # 基本信息 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 结束
@@ -29,7 +29,7 @@ defaults:
   # 站点 Logo
   logo: 
   # 站点头像
-  avatar: /images/redefine-avatar.svg
+  avatar: /images/head.jpg
 # 图片配置 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 结束
 
 
@@ -134,13 +134,13 @@ home_banner:
     light: /images/wallhaven-wqery6-light.webp # 亮色模式
     dark: /images/wallhaven-wqery6-dark.webp # 暗色模式
   # 首页横幅标题
-  title: Theme Redefine
+  title: 欢迎来到Bourne的个人博客
   # 首页横幅副标题
   subtitle:
-    text: [] # 副标题文本，数组
+    text: ['Loading...'] # 副标题文本，数组
     hitokoto:  # 一言配置
-      enable: false # 是否启用一言
-      show_author: false # 是否显示作者
+      enable: true # 是否启用一言
+      show_author: true # 是否显示作者
       api: https://v1.hitokoto.cn # API 地址；可添加类型，参见官方文档
     typing_speed: 100 # 打字速度（毫秒）
     backing_speed: 80 # 回退速度（毫秒）
@@ -171,12 +171,12 @@ home_banner:
   # 首页横幅社交链接
   social_links:
     # 是否启用
-    enable: false
+    enable: true
     # 社交链接样式
     style: default # 取值：default（默认）、reverse（反色）、center（居中）
     # 社交链接地址
     links:
-      github:  # 你的 GitHub 链接
+      github: https://github.com/Severusll  # 你的 GitHub 链接
       instagram: # 你的 Instagram 链接
       zhihu:  # 你的知乎链接
       twitter:  # 你的 Twitter 链接
@@ -208,30 +208,31 @@ navbar:
     Home: 
       path: / 
       icon: fa-regular fa-house # 可为空
-    # Archives: 
-    #   path: /archives 
-    #   icon: fa-regular fa-archive # can be empty
+    Archives: 
+      path: /archives 
+      icon: fa-regular fa-archive # can be empty
     # Status: 
     #   path: https://status.ohevan.com/
     #   icon: fa-regular fa-chart-bar
-    # About: 
-    #   icon: fa-regular fa-user
-    #   submenus:
-    #     Me: /about
-    #     Github: https://github.com/EvanNotFound/hexo-theme-redefine
-    #     Blog: https://ohevan.com
-    #     Friends: /friends
-    # Links: 
-    #   icon: fa-regular fa-link
-    #   submenus:
-    #     Link1: /link1
-    #     Link2: /link2
-    #     Link3: /link3
+    About: 
+      icon: fa-regular fa-user
+      submenus:
+        Me: /about
+        Github: https://github.com/EvanNotFound/hexo-theme-redefine
+        Blog: https://ohevan.com
+        Friends: /links/
+    Links: 
+      icon: fa-regular fa-link
+      submenus:
+        分类: /categories/
+        标签: /tags/
+        相册: /masonry/
+        书签: /bookmarks/
     # ...... # you can add more
-  # 导航栏搜索（本地搜索）。需要安装 hexo-generator-searchdb（npm i hexo-generator-searchdb）。参考：https://github.com/theme-next/hexo-generator-searchdb
+  # 导航栏搜索（本地搜索）。(已安装）需要安装 hexo-generator-searchdb（npm i hexo-generator-searchdb）。参考：https://github.com/theme-next/hexo-generator-searchdb
   search:
     # 是否启用
-    enable: false
+    enable: true
     # 页面加载时预加载搜索数据
     preload: true
 # 导航栏 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 结束
@@ -293,7 +294,7 @@ articles:
       h4: 1.6rem
       h5: 1.4rem
       h6: 1.3rem
-  # 字数统计。需要安装 hexo-wordcount（npm install hexo-wordcount）。参考：https://github.com/willin/hexo-wordcount
+  # 字数统计。（已安装）需要安装 hexo-wordcount（npm install hexo-wordcount）。参考：https://github.com/willin/hexo-wordcount
   word_count:
     enable: true # 是否启用
     count: true # 是否显示字数
@@ -362,7 +363,7 @@ comment:
       emoji: [] # Waline 表情配置，参考官方文档
       recaptchaV3Key: # Google reCAPTCHA v3 密钥
       turnstileKey: # Cloudflare Turnstile 密钥
-      reaction: false # 是否启用表情回应（reaction）
+      reaction: true # 是否启用表情回应（reaction）
     # Gitalk 评论系统。参考：https://github.com/gitalk/gitalk
     gitalk:
       clientID: # GitHub 应用 Client ID
@@ -431,18 +432,18 @@ inject:
 # 插件 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 开始
 # 文档：https://redefine-docs.ohevan.com/plugins
 plugins:
-  # RSS 订阅。需要安装 hexo-generator-feed（npm i hexo-generator-feed）。参考：https://github.com/hexojs/hexo-generator-feed
+  # RSS 订阅。(已安装）需要安装 hexo-generator-feed（npm i hexo-generator-feed）。参考：https://github.com/hexojs/hexo-generator-feed
   feed:
-    enable: false # 是否启用
+    enable: true # 是否启用
   # APlayer 音乐播放器。参考：https://github.com/DIYgod/APlayer
   aplayer:
-    enable: false # 是否启用
+    enable: true # 是否启用
     type: fixed # 类型：fixed（固定）、mini（迷你）
     audios:
-      - name: # 音频名称
-        artist: # 演唱者/作者
-        url: # 音频链接
-        cover: # 封面图片链接
+      - name: Imagine # 音频名称
+        artist: John Lennon # 演唱者/作者
+        url: https://evan.beee.top/music/Imagine%20-%20John%20Lennon.mp3 # 音频链接
+        cover: https://evan.beee.top/music/covers/Lennon_Imagine_Sleeve_1975.jpg # 封面图片链接
         lrc: # 歌词链接（可选）
 #      - name: # audio name
 #        artist: # audio artist
@@ -464,6 +465,8 @@ page_templates:
   friends_column: 2
   # 标签页样式
   tags_style: blur # 可选：blur（模糊）、cloud（云）
+  # 书签页列数
+  bookmarks_column: 3
 # 页面模板 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 结束
 
 
@@ -471,9 +474,9 @@ page_templates:
 # 文档：https://redefine-docs.ohevan.com/cdn
 cdn:
   # 是否启用 CDN
-  enable: false
+  enable: true
   # CDN 提供商
-  provider: npmmirror # 可选：npmmirror、zstatic、cdnjs、jsdelivr、unpkg、custom
+  provider: aliyun # 可选：npmmirror、zstatic、cdnjs、jsdelivr、unpkg、custom
   # 自定义 CDN 地址
   # 格式示例：https://cdn.custom.com/hexo-theme-redefine/${version}/source/${path}
   # 其中 ${path} 必须指向主题的 source 根目录
