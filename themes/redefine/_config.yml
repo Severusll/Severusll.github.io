@@ -11,7 +11,7 @@
 # 文档：https://redefine-docs.ohevan.com/basic/info
 info:
   # 站点标题
-  title: Bourne的个人博客
+  title: Bourne's Blog
   # 站点副标题
   subtitle:  ''
   # 作者名称
@@ -134,7 +134,7 @@ home_banner:
     light: /images/wallhaven-wqery6-light.webp # 亮色模式
     dark: /images/wallhaven-wqery6-dark.webp # 暗色模式
   # 首页横幅标题
-  title: 欢迎来到Bourne的个人博客
+  title: Welcome to My Blog # 首页横幅标题文本
   # 首页横幅副标题
   subtitle:
     text: ['Loading...'] # 副标题文本，数组
@@ -180,7 +180,7 @@ home_banner:
       instagram: # 你的 Instagram 链接
       zhihu:  # 你的知乎链接
       twitter:  # 你的 Twitter 链接
-      email:  # 你的邮箱
+      email: 19137815686@163.com      # 你的邮箱
       # ...... # 你可以继续添加
     # 带二维码抽屉的社交链接
     qrs:
